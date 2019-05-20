@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2019 11:56:07 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="dahal_ajaya_binfer.ResultQuery" table="RESULT_QUERY" schema="AJAYA" optimistic-lock="version">
+        <id name="id" type="short">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="checkBox" type="java.lang.Boolean">
+            <column name="CHECKBOX" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" length="500" />
+        </property>
+        <property name="summary" type="string">
+            <column name="SUMMARY" length="1200" />
+        </property>
+    </class>
+</hibernate-mapping>
